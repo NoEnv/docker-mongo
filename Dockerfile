@@ -1,4 +1,4 @@
-FROM mongo:7.0.7
+FROM mongo:7.0.8
 
 RUN ln -s /usr/bin/mongosh /usr/bin/mongo
 
