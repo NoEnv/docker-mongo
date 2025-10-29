@@ -20,8 +20,8 @@ RUN set -eux; \
 	apt-mark manual $savedAptMark > /dev/null; \
 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false
 
-ENV MONGO_MAJOR 8.0
-ENV MONGO_VERSION 8.0.15
+ENV MONGO_MAJOR 8.2
+ENV MONGO_VERSION 8.2.1
 
 RUN set -x \
     && echo "deb [ signed-by=/etc/apt/keyrings/mongodb.asc ] http://repo.mongodb.org/apt/ubuntu noble/mongodb-org/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/mongodb-org.list" \
